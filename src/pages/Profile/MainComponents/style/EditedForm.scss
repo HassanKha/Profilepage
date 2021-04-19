@@ -1,0 +1,89 @@
+.Edit {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    .EditIcon {
+      font-size: 100%;
+      padding-bottom: 4%;
+    }
+  }
+}
+.photoname {
+  form {
+    display: flex;
+    align-items: center;
+
+    h6 {
+      text-align: center;
+      color: #c5c4c7;
+      font-size: 1rem;
+      margin-left: 10%;
+    }
+  }
+}
+.contact {
+  .infoContainer {
+    h6 {
+      text-align: center;
+      color: #c5c4c7;
+      font-size: 0.8125rem;
+      margin-left: 10%;
+    }
+  }
+}
+.smedia {
+  display: flex;
+  flex-direction: column;
+
+  .media {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    .linkedinIcon {
+      background: #0e76a8;
+    }
+    .GoogleIcon {
+      background: #dd4b39;
+    }
+    .FacebookIcon {
+      background: #475993;
+    }
+    .InstaIcon {
+      background: #f16600;
+    }
+    .TwitterIcon {
+      background: #50abf1;
+    }
+    .Social {
+      padding: 0.25rem;
+      border-radius: 5%;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .label {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        .Icon {
+          font-size: 2rem;
+          color: white;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+  }
+}

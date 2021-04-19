@@ -1,0 +1,48 @@
+.EditIntro {
+  min-height: 20vh;
+ 
+  border: 0.1rem solid #d3b6f3;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.1rem 1.5rem;
+  margin-left: 2.5%;
+  padding: 0rem 3rem;
+  background-color: rgb(228, 222, 240);
+  position: relative;
+  
+  .leftContent {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-family: 'Muli ExtraBold';
+    color: #3e1882;
+    font-weight: 800;
+    padding: 5rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+  }
+  h3 {
+    padding: 5rem;
+    padding-top: 0rem;
+    text-align: center;
+    color: #6a48a6;
+    font-weight: 200;
+    line-height: 4rem;
+    font-size: 2.2rem;
+  }
+}
+
+.img {
+  img {
+    position: absolute;
+    left: 140rem;
+    top: 2.5rem;
+    width: 20%;
+    height: 21vh;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,44 @@
+.SignInInfo {
+  padding: 0rem 3.2rem;
+  width: 62%;
+  min-height: 23vh;
+  h4 {
+    color: #9b9b9c;
+    font-weight: 500;
+  }
+  .allcontent {
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 3rem;
+    h4 {
+      color: #613da1;
+      font-weight: 600;
+      padding: 1rem 0rem;
+    }
+
+    .contentTools {
+      padding: 0.5rem 24rem;
+      display: flex;
+      justify-content: flex-end;
+      .toSign {
+        width: 11rem;
+        margin-right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(79, 38, 150);
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        color: rgb(79, 38, 150);
+        h5 {
+          margin: 0rem 0.3rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

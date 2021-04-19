@@ -1,0 +1,218 @@
+@import 'sass/variables';
+.EditForm {
+  min-height: 90vh;
+  .Container{
+    position:absolute;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    width:100vw;
+    height:200rem;
+    z-index: 6;
+  }
+.CoursesContainer {
+  position:absolute;
+  position: fixed;
+  background-color:$secondary-color;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  width: 440px;
+  height: 120px;
+  display: inline-grid;
+  grid-template-columns: 47px 1fr 24px;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    'tickmark Title closeApp'
+    'tickmark description closeApp';
+  .CompleteMark {
+    grid-area: tickmark;
+    align-self: center;
+    > img {
+      height: 34px;
+      width: 47px;
+      padding-right: 10px;
+    }
+  }
+    .title {
+    grid-area: Title;
+    font-size: 18px;
+    color: $primary-color;
+    align-self: end;
+  }
+  .closeApp {
+    grid-area: closeApp;
+  }
+  .description {
+    grid-area: description;
+    font-size: 16px;
+    color: #707070;
+    align-self: start;
+  }
+}
+  .girl {
+    position: absolute;
+    top: 14%;
+    left: 65%;
+    z-index: 5;
+    width: 60rem;
+  }
+}
+span {
+  color: red;
+}
+
+.intro {
+  margin: 2rem 2rem;
+}
+.photoname {
+  margin: 1rem 4rem;
+  display: flex;
+  h4 {
+    color: #9b9b9c;
+    font-weight: 500;
+  }
+  img {
+    height: 10vh;
+    object-fit: cover;
+    margin: 0.5rem 1rem;
+  }
+
+  h5 {
+    margin: 0.5rem 1.5rem;
+    color: #f5a36a;
+  }
+
+  form {
+    padding: 4rem 2rem;
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+    label {
+      color: #41168e;
+      font-weight: 500;
+    }
+
+    input {
+      width: 40%;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.35rem;
+      border: 2px solid #b7b7b7;
+      color: #7e7e7e;
+      margin-left: 2.5rem;
+      &:focus-within {
+        outline: none;
+      }
+    }
+  }
+}
+
+.contact {
+  width: 50%;
+  h4 {
+    margin: 0rem 4rem;
+    color: #7e7e7e;
+    font-weight: 500;
+  }
+
+  form {
+    padding: 1.2rem 5rem;
+
+    .infoContainer {
+      display: flex;
+      padding: 1rem 1rem;
+      div {
+        width: 10vw;
+      }
+
+      .label {
+        color: #613da1;
+        font-weight: 600;
+        flex: 1;
+      }
+
+      input {
+        width: 30vw;
+        padding: 0.6rem 1.2rem;
+        margin: 0rem 4.4rem;
+        border-radius: 0.35rem;
+        border: 2px solid #b7b7b7;
+        color: #7e7e7e;
+        &:focus-within {
+          outline: none;
+        }
+      }
+
+      select {
+        width: 10vw;
+        height: 6vh;
+        padding: 0.7rem 1.2rem;
+        // margin:0rem 3rem;
+        border-radius: 0.35rem;
+        border: 2px solid #b7b7b7;
+        color: #7e7e7e;
+        &:focus-within {
+          outline: none;
+        }
+      }
+
+      .selectInfo {
+        width: 100%;
+        display: flex;
+
+        #date {
+          margin-left: 4rem;
+        }
+
+        #Birth {
+          margin-left: 11.7rem;
+        }
+      }
+      #gender {
+        margin-left: 11.7rem;
+      }
+    }
+  }
+}
+@mixin ResetButton {
+  width: 9.9rem;
+            height: 4rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-radius: 2rem;
+            color: white;
+            box-shadow: 0.3rem 0.3rem 0.6rem 0 rgb(0 0 0 / 16%);
+            cursor: pointer;
+  }
+.BTN {
+  width: 47.5%;
+  height: 5vh;
+
+  padding: 0rem 3.2rem;
+  display: flex;
+  justify-content: end;
+  .Update {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+  }
+  button {
+     @include ResetButton;
+    background-color: #f16600;
+    
+    width: 18%;
+   
+    font-weight: bold;
+    border: none;
+    color: white;
+  }
+}
